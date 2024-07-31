@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Responsive Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:,wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+                <h1 class="logo">Jahnavi</h1>
+            <ul id="menu-links">
+                <li><a href="https://www.freelancer.in/job/">Home</a></li>
+                <li><a href="https://www.peopleperhour.com/services/freelance-services/#">services</a></li>
+                <li><a href="https://www.freelancer.in/job-search/projects/">Projects</a></li>
+                <li><a href="https://webflow.com/blog/freelance-websites">About us</a></li>
+
+            </ul>
+            <button class="nav-but">Get started</button>
+            <img src="https://cdn.icon-icons.com/icons2/2506/PNG/512/menu_icon_150667.png" width=350px, height= 50px class="menu-icon" onclick="toogleMenu()"> 
+        </nav>
+        <div class="header">
+            <div class="header-content">
+            <h1><span>FREE</span><br><span>LANCER</span></h1>
+            <div class="btn-container">
+                <button class="btn-dark">Request call back</button>
+                <a href="https://www.investopedia.com/terms/f/freelancer.asp#:~:text=A%20freelancer%20is%20an%20independent,a%20better%20work%2Flife%20balance.">
+                    <button class="btn-light">Know more</button>
+                </a>
+              
+             </div>
+                <p>passionate UI/UX designers with 10+ years of experience.</p>
+                </div>
+                <img src="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2023/01/19070602/Successfully-Manage-Your-Freelance-Business-1024x512.jpg" class="user-img">
+             </div>
+    <script>
+        let navbar=document.querySelector('nav');
+        let menuLinks=document.getElementById("menu-links");
+
+        function toogleMenu(){
+            menuLinks.classList.toggle('show-menu');
+        }
+
+        window.onscroll=function(){
+            if(window.scrollY > 0){
+                navbar.style.background='#eefff9';
+            }else{
+                navbar.style.background='transparent';
+            }
+
+        }
+    </script>
+            </body>
+</html>
